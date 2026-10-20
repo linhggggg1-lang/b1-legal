@@ -4,157 +4,98 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy - B1 English Daily</title>
-  <style>
-    :root {
-      --bg: #f8fafc;
-      --card-bg: #ffffff;
-      --text: #0f172a;
-      --text-muted: #475569;
-      --primary: #0284c7;
-      --border: #e2e8f0;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      color: var(--text);
-      background-color: var(--bg);
-      padding: 16px;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      background: var(--card-bg);
-      padding: 24px;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-    }
-    header, footer {
-      padding-bottom: 16px;
-      margin-bottom: 24px;
-      border-bottom: 1px solid var(--border);
-    }
-    footer {
-      border-bottom: none;
-      border-top: 1px solid var(--border);
-      padding-top: 20px;
-      margin-top: 32px;
-      font-size: 0.9em;
-      color: var(--text-muted);
-    }
-    nav {
-      margin-top: 12px;
-    }
-    nav a {
-      color: var(--primary);
-      text-decoration: none;
-      font-weight: 500;
-      margin-right: 16px;
-      display: inline-block;
-      min-height: 40px;
-      line-height: 40px;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    h1 {
-      font-size: 1.8rem;
-      margin-bottom: 8px;
-      color: var(--text);
-    }
-    h2 {
-      font-size: 1.25rem;
-      margin-top: 24px;
-      margin-bottom: 10px;
-      color: var(--text);
-    }
-    p, ul {
-      margin-bottom: 16px;
-      color: var(--text);
-    }
-    ul {
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 8px;
-    }
-    .meta {
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      margin-bottom: 16px;
-    }
-    a {
-      color: var(--primary);
-    }
-  </style>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Privacy Policy</h1>
-      <div class="meta">Last Updated: October 14, 2026</div>
-      <nav aria-label="Main Navigation">
-        <a href="index.html">Overview</a>
-        <a href="terms.html">Terms of Service</a>
-        <a href="privacy.html">Privacy Policy</a>
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/app-icon-1024.png" alt="B1 English Daily Logo" width="44" height="44">
+        <span class="brand-text">B1 English Daily</span>
+      </a>
+      <nav class="main-nav" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html" class="active">Privacy</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <p>This Privacy Policy explains how <strong>B1 English Daily</strong>, operated by <strong>Học Tiếng Anh Mỗi Ngày</strong>, handles information when operating its daily video automation workflow.</p>
+  <main>
+    <div class="container">
+      <div class="content-card">
+        <h1>Privacy Policy</h1>
+        <div class="meta">Last Updated: October 20, 2026</div>
 
-      <h2>1. Information Processed</h2>
-      <p>Because B1 English Daily is an internal operational tool used only by its operator and does not offer accounts to public users, we do not collect personal data from viewers or visitors. The application processes only the following operational assets owned by the operator:</p>
-      <ul>
-        <li><strong>TikTok Authorization Credentials:</strong> Access tokens and refresh tokens necessary to post videos directly to the operator's owned TikTok account, stored securely in private Google Sheets and GitHub repository secrets. The operator's Zernio API key (used to deliver video posts) is stored only in GitHub repository secrets.</li>
-        <li><strong>Generated Media Assets:</strong> Rendered video files and accompanying captions, stored on the operator's private Google Drive.</li>
-        <li><strong>Vocabulary Lists and Configurations:</strong> English vocabulary items, definitions, and pipeline settings stored in private Google Sheets.</li>
-        <li><strong>Telegram Notification Identifiers:</strong> Internal chat IDs used strictly to send pipeline execution alerts to the operator.</li>
-      </ul>
-      <p>We do not collect viewer information, track third-party users, or sell, trade, or transfer data to advertising networks.</p>
+        <p>This Privacy Policy explains how <strong>B1 English Daily</strong>, operated by <strong>Học Tiếng Anh Mỗi Ngày</strong>, handles information when operating its daily video automation workflow.</p>
 
-      <h2>2. Purpose of Processing</h2>
-      <p>All information processed is used solely for the technical execution of the automated pipeline: generating educational vocabulary videos, publishing them to the operator's official TikTok account, and sending administrative notifications to the operator.</p>
+        <h2>1. Information Processed</h2>
+        <p>Because B1 English Daily is an internal operational tool used only by its operator and does not offer accounts to public users, we do not collect personal data from viewers or visitors. The application processes only the following operational assets owned by the operator:</p>
+        <ul>
+          <li><strong>TikTok Authorization Credentials:</strong> Access tokens and refresh tokens necessary to post videos directly to the operator's owned TikTok account, stored securely in private Google Sheets and GitHub repository secrets. The operator's Zernio API key (used to deliver video posts) is stored only in GitHub repository secrets.</li>
+          <li><strong>Generated Media Assets:</strong> Rendered video files and accompanying captions, stored on the operator's private Google Drive.</li>
+          <li><strong>Vocabulary Lists and Configurations:</strong> English vocabulary items, definitions, and pipeline settings stored in private Google Sheets.</li>
+          <li><strong>Telegram Notification Identifiers:</strong> Internal chat IDs used strictly to send pipeline execution alerts to the operator.</li>
+        </ul>
+        <p>We do not collect viewer information, track third-party users, or sell, trade, or transfer data to advertising networks.</p>
 
-      <h2>3. Third-Party Services Used</h2>
-      <p>The application interacts with the following third-party infrastructure and service providers:</p>
-      <ul>
-        <li><strong>TikTok:</strong> Official TikTok API to authenticate and publish short-form video content.</li>
-        <li><strong>Zernio:</strong> Social media posting API service used as an intermediary to deliver video posts.</li>
-        <li><strong>Google:</strong> Google Drive (asset storage), Google Sheets (vocabulary data and configuration), and Google Gemini API (text generation and content quality checks).</li>
-        <li><strong>Microsoft Edge Text-to-Speech:</strong> Voice synthesis for audio narration.</li>
-        <li><strong>Pexels:</strong> Source for royalty-free background videos.</li>
-        <li><strong>Telegram Bot API:</strong> Operational notifications and status alerts for the operator.</li>
-        <li><strong>GitHub Actions:</strong> Automation runner executing scheduled workflows.</li>
-        <li><strong>Cloudflare Workers:</strong> Webhook handler receiving operator commands from Telegram.</li>
-      </ul>
+        <h2>2. Purpose of Processing</h2>
+        <p>All information processed is used solely for the technical execution of the automated pipeline: generating educational vocabulary videos, publishing them to the operator's official TikTok account, and sending administrative notifications to the operator.</p>
 
-      <h2>4. Data Retention and Deletion</h2>
-      <p>Operational data is retained only as long as needed for video creation and is kept until deleted by the operator. Account authorization on TikTok can be revoked at any time by the operator through TikTok's security and permissions settings.</p>
-      <p>Data deletion requests or privacy inquiries can be submitted via our contact email. All requests will be addressed within 30 days.</p>
+        <h2>3. Third-Party Services Used</h2>
+        <p>The application interacts with the following third-party infrastructure and service providers:</p>
+        <ul>
+          <li><strong>TikTok:</strong> Official TikTok API to authenticate and publish short-form video content.</li>
+          <li><strong>Zernio:</strong> Social media posting API service used as an intermediary to deliver video posts.</li>
+          <li><strong>Google:</strong> Google Drive (asset storage), Google Sheets (vocabulary data and configuration), and Google Gemini API (text generation and content quality checks).</li>
+          <li><strong>Microsoft Edge Text-to-Speech:</strong> Voice synthesis for audio narration.</li>
+          <li><strong>Pexels:</strong> Source for royalty-free background videos.</li>
+          <li><strong>Telegram Bot API:</strong> Operational notifications and status alerts for the operator.</li>
+          <li><strong>GitHub Actions:</strong> Automation runner executing scheduled workflows.</li>
+          <li><strong>Cloudflare Workers:</strong> Webhook handler receiving operator commands from Telegram.</li>
+        </ul>
 
-      <h2>5. Children's Privacy</h2>
-      <p>B1 English Daily is an administrative publishing tool not directed to children under the age of 13. We do not knowingly solicit or collect personal information from children.</p>
+        <h2>4. Data Retention and Deletion</h2>
+        <p>Operational data is retained only as long as needed for video creation and is kept until deleted by the operator. Account authorization on TikTok can be revoked at any time by the operator through TikTok's security and permissions settings.</p>
+        <p>Data deletion requests or privacy inquiries can be submitted via our contact email. All requests will be addressed within 30 days.</p>
 
-      <h2>6. Changes to this Privacy Policy</h2>
-      <p>Any updates to this Privacy Policy will be published directly on this page, accompanied by a revised "Last Updated" date.</p>
+        <h2>5. Children's Privacy</h2>
+        <p>B1 English Daily is an administrative publishing tool not directed to children under the age of 13. We do not knowingly solicit or collect personal information from children.</p>
 
-      <h2>7. Contact Information</h2>
-      <p>For questions regarding this Privacy Policy or data handling practices, please contact:</p>
-      <ul>
-        <li><strong>Operator:</strong> Học Tiếng Anh Mỗi Ngày</li>
-        <li><strong>Email:</strong> <a href="mailto:linhggggg1@gmail.com">linhggggg1@gmail.com</a></li>
-      </ul>
-    </main>
+        <h2>6. Changes to this Privacy Policy</h2>
+        <p>Any updates to this Privacy Policy will be published directly on this page, accompanied by a revised "Last Updated" date.</p>
 
-    <footer>
-      <nav aria-label="Footer Navigation">
-        <a href="index.html">Overview</a>
+        <h2>7. Contact Information</h2>
+        <p>For questions regarding this Privacy Policy or data handling practices, please contact:</p>
+        <ul>
+          <li><strong>Operator:</strong> Học Tiếng Anh Mỗi Ngày</li>
+          <li><strong>Email:</strong> <a href="mailto:linhggggg1@gmail.com">linhggggg1@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">About & Contact</a>
         <a href="terms.html">Terms of Service</a>
         <a href="privacy.html">Privacy Policy</a>
       </nav>
       <p>&copy; 2026 Học Tiếng Anh Mỗi Ngày. All rights reserved.</p>
-    </footer>
-  </div>
+      <p>Contact: <a href="mailto:linhggggg1@gmail.com">linhggggg1@gmail.com</a></p>
+    </div>
+  </footer>
 </body>
 </html>
